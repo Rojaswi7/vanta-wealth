@@ -1174,6 +1174,9 @@ addEventListener("keydown", e => {
   else if (k === "/") { e.preventDefault(); openCmdk(); }
 });
 
+// used by the print edition (build.mjs), which shows every view at once
+window.vantaDrawAll = () => { renderNW(); renderIncome(); renderGoalDetail(); };
+
 /* ---------- boot ---------- */
 renderHero(); renderKPIs(); renderRangeSeg(); renderAlloc(); renderHoldings(); renderGoalCards(); syncControls(); renderInsights();
 route();

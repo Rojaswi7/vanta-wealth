@@ -5,5 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^23.11.1"
   }
 }
